@@ -1,5 +1,6 @@
-body {
-  margin: 0;
+.interface {
+  background-image: url(../img/back.png);
+  background-size: 1300px, 300px;
 }
 
 .app {
@@ -10,19 +11,10 @@ body {
   min-height: 100vh;
 }
 
-.todo-list {
-  background-color: #0B2027;
-  font-family: "Space Mono", monospace;
-  padding: 1rem;
-  min-width: 400px;
-  min-height: 300px;
-}
-
 .title {
-  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  border-bottom: 1px solid var(--amarelo);
   font-size: 1.5rem;
-  font-family: "BioRhyme", serif;
-  color: #F6F1D1;
+  color: var(--azul);
 }
 
 .form {
@@ -39,26 +31,23 @@ body {
 
 .form-input {
   outline: none;
-  background-color: #F6F1D1;
-  border-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--amarelo);
+  border-color: var(--azul);
 }
 
 .form-button {
   border: 1px;
-  background: #F6F1D1;
+  background: var(--amarelo);
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 0.25rem;
 }
 
 .form-button:hover {
-  color: #F6F1D1;
-  background: rgba(246, 241, 209, 0.1);
+  color: var(--amarelo);
+  background: #ff5d95;
 }
 
-body {
-  margin: 0;
-}
 
 .app {
   display: flex;
@@ -69,44 +58,48 @@ body {
 }
 
 .todo-list {
-  background-color: #0B2027;
-  font-family: "Space Mono", monospace;
+  background-color: #f5f5f5;
   padding: 1rem;
   min-width: 400px;
   min-height: 300px;
+  border-radius: 15px;
 }
 
 .title {
-  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  border-bottom: 5px solid var(--azul-claro);
   font-size: 1.5rem;
-  font-family: "BioRhyme", serif;
-  color: #F6F1D1;
+  color: var(--rosa-claro);
 }
 
 .form {
   display: flex;
   justify-content: center;
 }
-.form-input, .form-button {
+
+.form-input,
+.form-button {
   border-radius: 0;
   padding: 0.75rem;
   font-size: 0.75rem;
 }
+
 .form-input {
   outline: none;
-  background-color: #F6F1D1;
-  border-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--amarelo);
+  border-color: var(--azul);
 }
+
 .form-button {
   border: 1px;
-  background: #F6F1D1;
+  background: var(--amarelo);
   text-transform: uppercase;
   cursor: pointer;
   margin-left: 0.25rem;
 }
+
 .form-button:hover {
-  color: #F6F1D1;
-  background: rgba(246, 241, 209, 0.1);
+  color: var(--azul-claro);
+  background: var(--rosa);
 }
 
 .list {
@@ -116,26 +109,27 @@ body {
 }
 
 .task {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #F6F1D1;
+  background-color: var(--rosa-claro);
+  color: var(--amarelo);
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
   padding: 1rem 3rem;
 }
 
-.check-button, .delete-button {
-  background-color: #F6F1D1;
-  border: none;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+.check-button,
+.delete-button {
+  background-color: white;
+  border: 1px solid var(--rosa);
+  box-shadow: 0 0 8px var(--rosa);
   outline: none;
   border-radius: 2px;
   cursor: pointer;
 }
 
 .task.done .check-button {
-  background-color: #46494C;
-  color: #F6F1D1;
+  background-color: #ff5d95;
+  color: var(--amarelo);
 }
 
 .check-icon {
@@ -155,8 +149,8 @@ body {
   margin: 0;
 }
 
-.content-data { 
-  color: #F6F1D1;
+.content-data {
+  color:var(--amarelo);
   display: flex;
   justify-content: flex-start;
   margin-bottom: 0.5rem;
@@ -166,4 +160,3 @@ body {
 .task.done .content {
   text-decoration: line-through;
 }
-
