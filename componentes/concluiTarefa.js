@@ -13,7 +13,6 @@ const BotaoConclui = (atualiza, id) => {
 
     botaoConclui.classList.add('check-button')
     botaoConclui.innerText = 'concluir'
-
     botaoConclui.addEventListener('click', () => concluirTarefa(atualiza, id))
 
     return botaoConclui

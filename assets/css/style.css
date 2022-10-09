@@ -63,12 +63,16 @@
   min-width: 400px;
   min-height: 300px;
   border-radius: 15px;
+  border: solid #ffd700;
+  box-shadow: 10px 10px  #ffd700;
 }
 
 .title {
-  border-bottom: 5px solid var(--azul-claro);
+  border-bottom: 5px solid #ffd700;
   font-size: 1.5rem;
-  color: var(--rosa-claro);
+  color: #ff5d95;
+  padding: 0.5rem;
+  text-align: center;
 }
 
 .form {
@@ -78,15 +82,17 @@
 
 .form-input,
 .form-button {
-  border-radius: 0;
-  padding: 0.75rem;
-  font-size: 0.75rem;
+  border-radius: 3px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: 'Abel', sans-serif;
+  color: #ff5d95;
+  font-weight: bold;
 }
 
 .form-input {
   outline: none;
   background-color: var(--amarelo);
-  border-color: var(--azul);
 }
 
 .form-button {
@@ -98,8 +104,8 @@
 }
 
 .form-button:hover {
-  color: var(--azul-claro);
-  background: var(--rosa);
+  color: #f5f5f5;
+  background: var(--rosa-claro);
 }
 
 .list {
@@ -110,26 +116,34 @@
 
 .task {
   background-color: var(--rosa-claro);
-  color: var(--amarelo);
+  color: #ff5d95;
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
   padding: 1rem 3rem;
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .check-button,
 .delete-button {
-  background-color: white;
-  border: 1px solid var(--rosa);
-  box-shadow: 0 0 8px var(--rosa);
+  background-color:#f5f5f5;
   outline: none;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
+  padding: 6px;
+  font-family: 'Abel', sans-serifs;
+  text-align: center;
+  box-shadow: 3px 3px  #ffd700;
+  font-weight: bold;
+  color: #ff5d95;
+  text-transform: uppercase;
+  margin:0px 20px 5px 10px;
 }
 
 .task.done .check-button {
-  background-color: #ff5d95;
-  color: var(--amarelo);
+  background-color: var(--amarelo);
+  color: var(--azul);
 }
 
 .check-icon {
@@ -142,7 +156,7 @@
 }
 
 .task.done .check-icon {
-  background-color: #0B2027;
+  background-color: var(--amarelo);
 }
 
 .content {
@@ -150,11 +164,12 @@
 }
 
 .content-data {
-  color:var(--amarelo);
+  color:#ff5d95;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 0.5rem;
   padding: 1rem 3rem;
+  font-weight: bold;
 }
 
 .task.done .content {
