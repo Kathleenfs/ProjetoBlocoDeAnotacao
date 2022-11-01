@@ -2,9 +2,9 @@
 
  
  <div align = "center">
-  <img alt="" src="https://">
+  <img width="700" height= 200alt="Bloco de anotações" src="https://user-images.githubusercontent.com/90014122/199292624-35474be4-3695-4d0a-bcda-c2a1aa44676d.png">
   <br>
-  A temática do jogo foi em uma vida escolar. 
+  A temática do site foi inspirada em uma vida escolar. 
 </div>
 
 <h1>Objetivo</h1>
